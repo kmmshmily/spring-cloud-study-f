@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProviderController {
 
-    @GetMapping("/actoator/health")
+    @GetMapping("/actuator/health")
     public String Health(){
         return "success";
     }
