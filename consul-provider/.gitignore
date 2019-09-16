@@ -6,6 +6,10 @@ target/
 !**/src/test/**
 .mvn/
 mvnw.cmd
+mvnw
+/mvnw
+mvnw/
+/mvnw/
 
 ### STS ###
 .apt_generated
