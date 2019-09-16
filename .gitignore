@@ -1,11 +1,38 @@
-.idea
-.settings/
-.studio/
-.classpath
-*.iml
-.project
+HELP.md
 target/
+/target
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+.mvn/
+mvnw.cmd
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+.idea
+*.iws
+*.iml
+*.ipr
 .log
 /log
 *.log
-*.factorypath
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
