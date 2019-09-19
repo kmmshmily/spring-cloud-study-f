@@ -1,6 +1,7 @@
 package com.kmmshmily.feigndemo;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,6 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface HelloService {
 
     @RequestMapping(value = "/search/repositories", method = RequestMethod.GET)
-    String searchRepo(@RequestParam("q") String queryStr);
+    ResponseEntity<byte[]> searchRepo(@RequestParam("q") String queryStr);
 
 }   
