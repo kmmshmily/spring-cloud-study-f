@@ -1,5 +1,6 @@
 package com.kmmshmily.spring;
 
+import com.kmmshmily.bean.KmmshmilyBean;
 import com.kmmshmily.bean.MyTestBean;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -14,8 +15,9 @@ import org.springframework.core.io.ClassPathResource;
 
 public class SpringTest {
     public static void main(String[] args) {
-        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("/xml/beanFactoryXml.xml"));
-        MyTestBean bean = (MyTestBean)bf.getBean("myTestBean");
+        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("/xml/beanFactoryXml.xml"), null);
+//        MyTestBean bean = (MyTestBean)bf.getBean("myTestBean");
+        KmmshmilyBean bean = (KmmshmilyBean)bf.getBean("kmmshmilyBean");
         System.out.println(bean.getTestStr());
     }
 }   
