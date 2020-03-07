@@ -3,6 +3,7 @@ package com.kmmshmily.bean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @program: spring-cloud-study-f
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Component;
  * @author: kmmshmily--cuiyong
  * @date: 2020-01-15 16:38
  **/
-@Configuration
 public class KmmshmilyBean {
     private String testStr = "kmmshmily";
 
@@ -22,8 +22,8 @@ public class KmmshmilyBean {
         this.testStr = testStr;
     }
 
-    @Bean(name = "kmmshmilyBean")
-    public KmmshmilyBean test(){
-        return new KmmshmilyBean();
-    }
+//    @Bean(name = "kmmshmilyBean")
+//    public KmmshmilyBean test(){
+//        return new KmmshmilyBean();
+//    }
 }   

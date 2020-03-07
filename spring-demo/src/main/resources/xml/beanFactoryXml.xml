@@ -6,4 +6,6 @@
 
     <bean id="myTestBean" class="com.kmmshmily.bean.MyTestBean"/>
 
+    <bean id="kmmshmilyBean" class="com.kmmshmily.bean.KmmshmilyBean"/>
+
 </beans>
